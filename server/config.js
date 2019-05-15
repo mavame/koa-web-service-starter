@@ -27,15 +27,11 @@ const schema = Joi.object().keys({
   host: Joi.string().required(),
   port: Joi.number()
     .integer()
-    .required(),
-  logLevel: Joi.string()
-    .valid(["trace", "debug", "info", "warn", "error", "silent"])
     .required()
 });
 
 module.exports = configure({
   env: process.env.NODE_ENV || "development",
   host: process.env.HOST,
-  port: process.env.PORT,
-  logLevel: process.env.LOG_LEVEL || "error"
+  port: process.env.PORT
 }, schema);

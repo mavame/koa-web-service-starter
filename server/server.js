@@ -1,4 +1,3 @@
-const config = require("./config");
 const Koa = require("koa");
 const app = new Koa();
 
@@ -10,6 +9,4 @@ app.use(async ctx => {
   });
 });
 
-app.listen(config.port, () => {
-  console.log(`The app is running on port ${config.port}.`);
-});
+module.exports = app;

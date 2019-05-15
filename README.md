@@ -5,7 +5,7 @@ A simple docker + koajs + Postgresql-enabled web application starter, with commo
 The project helps you with the following:
 
 - set up a local nodejs + Postgresql + Redis development environment quickly using docker
-- write simple web services using koa
+- write simple web services and endpoints using koa
 - connect to and model data in Postgresql using knex
 - query and access relational data in your database using the objection ORM
 

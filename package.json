@@ -2,10 +2,10 @@
   "name": "koa-web-service-starter",
   "version": "0.0.1",
   "description": "A simple docker + koajs + Postgresql-enabled web application starter, with common middleware to help you quickly create web service back-ends more quickly.",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index"
+    "start": "nodemon server"
   },
   "keywords": [],
   "author": "Matt Van Meter <mvanmeter1@gmail.com> (http://mavame.github.io)",
