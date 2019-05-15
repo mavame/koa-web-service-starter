@@ -1,0 +1,17 @@
+{
+  "name": "koa-web-service-starter",
+  "version": "0.0.1",
+  "description": "A simple docker + koajs based web service starter with common middleware, a database, cache, and some authentication.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "keywords": [],
+  "author": "Matt Van Meter <mvanmeter1@gmail.com> (http://mavame.github.io)",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "nodemon": "^1.19.0"
+  }
+}
