@@ -1,7 +1,7 @@
 {
   "name": "koa-web-service-starter",
   "version": "0.0.1",
-  "description": "A simple docker + koajs based web service starter with common middleware, a database, cache, and some authentication.",
+  "description": "A simple docker + koajs + Postgresql-enabled web application starter, with common middleware to help you quickly create web service back-ends more quickly.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

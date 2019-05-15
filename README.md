@@ -1,10 +1,12 @@
 # koa-web-service-starter
 
-A simple docker + koajs + Postgresql-enabled web application starter, with common middleware to help you quickly do the following for your web service back-ends:
+A simple docker + koajs + Postgresql-enabled web application starter, with common middleware to help you quickly create web service back-ends more quickly.
 
-- spin up a local development environment using docker
-- write simple endpoints using koa
-- model data in Postgresql using knex
+The project helps you with the following:
+
+- set up a local nodejs + Postgresql + Redis development environment quickly using docker
+- write simple web services using koa
+- connect to and model data in Postgresql using knex
 - query and access relational data in your database using the objection ORM
 
 ## Running the project
@@ -26,5 +28,5 @@ $ make docker # or docker-compose up -d
 #### Run the web server
 
 ```bash
-$ make web
+$ make web # or npm start
 ```
