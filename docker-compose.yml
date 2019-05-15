@@ -1,0 +1,28 @@
+postgres:
+  image: postgres
+  ports:
+    - "5685:5432"
+  volumes_from:
+    - pgdata
+  environment:
+    POSTGRES_USER: example
+    POSTGRES_PASS: example
+    POSTGRES_DB: example
+
+redis:
+  image: redis
+  ports:
+    - "6380:6379"
+  volumes_from:
+    - redisdata
+
+redisdata:
+  image: busybox
+  volumes:
+    - /data
+
+pgdata:
+  image: busybox
+  volumes:
+    - /data
+    # - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
