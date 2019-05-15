@@ -11,6 +11,7 @@
   "author": "Matt Van Meter <mvanmeter1@gmail.com> (http://mavame.github.io)",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^8.0.0",
     "joi": "^14.3.1",
     "knex": "^0.16.5",

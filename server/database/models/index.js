@@ -1,6 +1,6 @@
-const { env } = require("./config");
+const { env } = require("../../config");
 const knex = require("knex");
-const knexConfig = require("../knexfile");
+const knexConfig = require("../../../knexfile");
 const { Model } = require("objection");
 
 // set up the database connection and ORM

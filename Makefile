@@ -20,3 +20,11 @@ migration:
 .PHONY: migrate
 migrate:
 	npx knex migrate:latest
+
+.PHONY: migrate_down
+migrate_down:
+	npx knex migrate:rollback
+
+.PHONY: seed
+seed:
+	npx knex seed:run
