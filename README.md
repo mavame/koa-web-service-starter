@@ -25,6 +25,14 @@ The project uses a Makefile. This hopefully helps you type less `npm run *` and 
 $ make docker # or docker-compose up -d
 ```
 
+#### Copy environment variables
+
+The project makes use of the `dotenv` project to specify and share environment variables.
+
+```bash
+$ make env # or cp dev.env .env
+```
+
 #### Run the web server
 
 ```bash

@@ -5,7 +5,7 @@ app.use(async ctx => {
   ctx.body = await new Promise(resolve => {
     setTimeout(() => {
       resolve('Hello world!');
-    }, 5000);
+    }, 250);
   });
 });
 
