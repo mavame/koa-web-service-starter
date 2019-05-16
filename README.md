@@ -38,3 +38,21 @@ $ make env # or cp dev.env .env
 ```bash
 $ make web # or npm start
 ```
+
+## Configuration
+
+The project makes use of `dotenv`. All environment variables are validated at runtime through `server/config.js`. That module uses `Joi` to do some runtime validation on variables, and can stop the process from running if the environment isn't configured correctly.
+
+The following command copies environment variables.
+
+```bash
+$ cp dev.env .env
+```
+
+Once `.env` exists, any process requiring the environment and app configuration through `server/config.js` will run some validation against the configuration, which is helpful if some environment or configuration is required for the app to run successfully. For example, if the variable named `variable` was required but was not set correctly, you might receive the following in the terminal:
+
+```bash
+$ make web
+ValidationError: child "variable" fails because ["variable" is required]
+```
+

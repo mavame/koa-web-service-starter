@@ -28,12 +28,12 @@ const schema = Joi.object().keys({
   port: Joi.number()
     .integer()
     .required(),
-  authSalt: Joi.string().required()
+  variable: Joi.string().required()
 });
 
 module.exports = configure({
   env: process.env.NODE_ENV || "development",
   host: process.env.HOST,
   port: process.env.PORT,
-  authSalt: process.env.AUTH_SALT
+  variable: process.env.AUTH_SALT
 }, schema);
