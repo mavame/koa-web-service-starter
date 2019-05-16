@@ -5,10 +5,9 @@ exports.up = async knex => {
       .primary()
       .notNullable()
       .defaultTo(knex.raw("uuid_generate_v4()"));
-    table.text("email").notNullable();
-    table.text("hash").notNullable();
+    table.text("email").notNullable().unique();
+    table.text("hash").notNullable().unique();
     table.text("salt").notNullable();
-    table.unique(["email", "hash"]);
     table.timestamps(false, true);
   });
 

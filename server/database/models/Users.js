@@ -1,5 +1,5 @@
 const bcrypt = require("bcryptjs");
-const { BaseModel } = require("./index");
+const { BaseModel } = require("./base");
 
 class UsersModel extends BaseModel {
   static get tableName() {
@@ -7,7 +7,7 @@ class UsersModel extends BaseModel {
   }
 
   static async createUserData({ email, password }) {
-    const salt = await bcrypt.genSaltSync(10);
+    const salt = bcrypt.genSaltSync(10);
     const hash = await bcrypt.hash(`${password}${salt}`, 10);
     return {
       email,
